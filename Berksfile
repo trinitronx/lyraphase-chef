@@ -14,3 +14,4 @@ cookbook 'git'
 
 # Github cookbooks
 cookbook 'curl', :github => 'phlipper/chef-curl'
+cookbook 'users-lyraphase', :github => 'trinitronx/users-lyraphase'
