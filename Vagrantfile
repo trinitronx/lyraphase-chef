@@ -1,6 +1,8 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+encrypted_data_bag_secret_file = File.join ENV['HOME'], '.chef', 'encrypted_data_bag_secret-lyraphase'
+
 Vagrant.configure("2") do |config|
   # All Vagrant configuration is done here. The most common configuration
   # options are documented and commented below. For a complete reference,
@@ -71,6 +73,14 @@ Vagrant.configure("2") do |config|
   # config.berkshelf.except = []
 
   config.vm.provision :chef_solo do |chef|
+
+    chef.cookbooks_path = [ 'cookbooks', 'site-cookbooks' ]
+    chef.data_bags_path    = './data_bags'
+    chef.encrypted_data_bag_secret_key_path = encrypted_data_bag_secret_file if File.exists? encrypted_data_bag_secret_file
+
+    # Set chef provisioner log level [ :debug, :info, :warn, :error, :fatal ]
+    chef.log_level = :debug
+
     chef.json = {
       :mysql => {
         :server_root_password => 'rootpass',
@@ -80,7 +90,7 @@ Vagrant.configure("2") do |config|
     }
 
     chef.run_list = [
-        "recipe[lyraphase-chef::default]"
+        "role[base]"
     ]
   end
 end
