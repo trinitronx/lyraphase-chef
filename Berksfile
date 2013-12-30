@@ -15,3 +15,4 @@ cookbook 'git'
 # Github cookbooks
 cookbook 'curl', :github => 'phlipper/chef-curl'
 cookbook 'users-lyraphase', :github => 'trinitronx/users-lyraphase'
+cookbook 'minitest-handler', :git => 'https://github.com/btm/minitest-handler-cookbook.git'
