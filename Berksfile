@@ -10,6 +10,7 @@ cookbook 'chef-client'
 cookbook 'docker'
 cookbook 'git'
 cookbook 'ntp'
+cookbook 'user'
 cookbook 'vagrant'
 
 # Local cookbooks
