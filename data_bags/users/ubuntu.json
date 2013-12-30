@@ -1,0 +1,11 @@
+{
+  "id": "ubuntu",
+  "groups": [ "ubuntu" ],
+  "uid": 1001,
+  "gid": 1001,
+  "shell": "\/bin\/false",
+  "comment": "Ubuntu user role account",
+  "password": "!!",
+  "ssh_keys": [
+  ]
+}
