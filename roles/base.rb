@@ -5,7 +5,7 @@ run_list(
   "recipe[build-essential]",
   "recipe[apt]",
   "recipe[ntp]",
-  "recipe[users-lyraphase::sudo]"
+  "recipe[user::data_bag]"
 )
 
 override_attributes({
