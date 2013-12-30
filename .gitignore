@@ -1,0 +1,16 @@
+.rake_test_cache
+.DS_Store
+*.iml
+*.ipr
+*.iws
+*.un~
+*.swp
+.rakeTasks
+/cookbooks
+/certificates
+/tmp
+.kitchen/
+vendor/
+/scratch
+.vagrant
+Berksfile.lock
