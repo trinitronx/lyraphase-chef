@@ -11,5 +11,18 @@ platforms:
 
 suites:
   - name: default
-    run_list: role[base]
-    attributes:
+    run_list: 
+     - recipe[minitest-handler]
+     - role[base]
+     - role[lxc-host]
+     - recipe[docker_test::default]
+     - recipe[docker_test::image_lwrp]
+     - recipe[docker_test::container_lwrp]
+    attributes: 
+      users:
+       - trinitronx
+      mysql: 
+        server_root_password: rootpass
+        server_debian_password: debpass
+        server_repl_password: replpass
+
