@@ -1,0 +1,10 @@
+{
+  "name": "lxc-host",
+  "description": "Role for lxc-host servers with docker",
+  "default_attributes": {
+    "lxc-host": true
+  },
+  "run_list": [
+    "recipe[docker]"
+  ]
+}

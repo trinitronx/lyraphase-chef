@@ -1,0 +1,7 @@
+{
+  "name": "lxc-container",
+  "description": "Role that identifies a host as an lxc-container",
+  "default_attributes": {
+    "lxc-container": true
+  }
+}
