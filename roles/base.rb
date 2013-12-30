@@ -5,7 +5,7 @@ run_list(
   "recipe[build-essential]",
   "recipe[apt]",
   "recipe[ntp]",
-  "recipe[lyraphase-gloo::ops]"
+  "recipe[lyraphase-gloo::sudo]"
 )
 
 override_attributes({
