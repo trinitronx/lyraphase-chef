@@ -7,7 +7,7 @@ gem "minitest-chef-handler", :group => :integration
 
 group :development do
   gem 'knife-spork'
-  gem 'knife-block'
+  gem "knife-block", "~> 0.0.9"
   gem 'knife-rackspace'
   gem 'knife-essentials'
 end
@@ -20,6 +20,7 @@ group :test do
   gem 'berkshelf'
   gem 'chefspec', '~> 2.0'
   gem 'chef-vault'
+  gem 'test-kitchen'
 
   gem 'guard', '~> 1.8'
   gem 'guard-foodcritic', '~> 1.0'
