@@ -54,9 +54,10 @@ Vagrant.configure("2") do |config|
   # View the documentation for the provider you're using for more
   # information on available options.
 
-  config.ssh.max_tries = 40
-  config.ssh.timeout   = 120
-
+  # Install the latest version of chef
+  # Note: uses vagrant-omnibus plugin
+  config.omnibus.chef_version = :latest
+  
   # The path to the Berksfile to use with Vagrant Berkshelf
   # config.berkshelf.berksfile_path = "./Berksfile"
 
@@ -76,6 +77,7 @@ Vagrant.configure("2") do |config|
 
     chef.cookbooks_path = [ 'cookbooks', 'site-cookbooks' ]
     chef.data_bags_path    = './data_bags'
+    chef.roles_path = 'roles'
     chef.encrypted_data_bag_secret_key_path = encrypted_data_bag_secret_file if File.exists? encrypted_data_bag_secret_file
 
     # Set chef provisioner log level [ :debug, :info, :warn, :error, :fatal ]
@@ -90,7 +92,8 @@ Vagrant.configure("2") do |config|
     }
 
     chef.run_list = [
-        "role[base]"
+        "role[base]",
+        "role[lxc-host]"
     ]
   end
 end
