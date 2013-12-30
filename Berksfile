@@ -5,10 +5,12 @@ site :opscode
 
 # Community site cookbooks
 cookbook 'apt'
+cookbook 'build-essential'
 cookbook 'chef-client'
-cookbook 'vagrant'
 cookbook 'docker'
 cookbook 'git'
+cookbook 'ntp'
+cookbook 'vagrant'
 
 # Local cookbooks
 
