@@ -12,6 +12,7 @@ cookbook 'git'
 cookbook 'ntp'
 cookbook 'user'
 cookbook 'vagrant'
+cookbook 'virtualbox'
 
 # Local cookbooks
 
