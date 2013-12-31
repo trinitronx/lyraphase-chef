@@ -1,0 +1,21 @@
+{
+  "name": "development",
+  "description": "Role for development machines. Includes tools for ruby & VM development",
+  "default_attributes": {
+    "vagrant": {
+      "url": "https://dl.bintray.com/mitchellh/vagrant/vagrant_1.4.1_x86_64.deb",
+      "checksum": "27748094f15ff708cd0d130e4a2e30e4722aecc562901a3f204e6e36dbe1013e",
+      "plugins": [
+        "vagrant-berkshelf",
+        "vagrant-cachier",
+        "vagrant-omnibus",
+        "vagrant-vmware-fusion",
+        "vagrant-docker"
+      ]
+    }
+  },
+  "run_list": [
+    "recipe[vagrant]",
+    "recipe[virtualbox]"
+  ]
+}
