@@ -2,7 +2,10 @@
   "name": "lxc-host",
   "description": "Role for lxc-host servers with docker",
   "default_attributes": {
-    "lxc-host": true
+    "lxc-host": true,
+    "docker": {
+      "bind_uri": "tcp://127.0.0.1:4243"
+    }
   },
   "run_list": [
     "recipe[docker]"
