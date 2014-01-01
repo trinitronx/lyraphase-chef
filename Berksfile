@@ -9,6 +9,7 @@ cookbook 'build-essential'
 cookbook 'chef-client'
 #cookbook 'docker' # until PR #33 is merged, this is broken
 cookbook 'git'
+cookbook 'hub'
 cookbook 'ntp'
 cookbook 'user'
 cookbook 'vagrant'
