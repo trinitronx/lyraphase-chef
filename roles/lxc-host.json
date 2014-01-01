@@ -1,4 +1,5 @@
 {
+  "json_class": "Chef::Role",
   "name": "lxc-host",
   "description": "Role for lxc-host servers with docker",
   "default_attributes": {

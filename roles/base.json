@@ -1,4 +1,5 @@
 {
+  "json_class": "Chef::Role",
   "name": "base",
   "description": "Base role applied to all nodes.",
   "override_attributes": {

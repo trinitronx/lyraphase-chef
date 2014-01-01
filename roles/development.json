@@ -1,4 +1,5 @@
 {
+  "json_class": "Chef::Role",
   "name": "development",
   "description": "Role for development machines. Includes tools for ruby & VM development",
   "default_attributes": {

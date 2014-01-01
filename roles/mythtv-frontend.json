@@ -1,4 +1,5 @@
 {
+  "json_class": "Chef::Role",
   "name": "mythtv-frontend",
   "description": "Role for mythtv frontend servers",
   "run_list": [
