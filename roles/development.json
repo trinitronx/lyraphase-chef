@@ -17,6 +17,7 @@
   },
   "run_list": [
     "recipe[vagrant]",
-    "recipe[virtualbox]"
+    "recipe[virtualbox]",
+    "recipe[hub]"
   ]
 }
