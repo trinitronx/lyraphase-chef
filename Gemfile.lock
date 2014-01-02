@@ -1,3 +1,25 @@
+GIT
+  remote: git://github.com/adnichols/kitchen-docker.git
+  revision: 7d03f1f89cd93e71d08618a0e00a1397214a58af
+  branch: docker-ruby-api
+  specs:
+    kitchen-docker (0.13.0)
+      docker-api (~> 1.7)
+      test-kitchen (>= 1.0.0.rc.2)
+
+GIT
+  remote: git://github.com/coderanger/test-kitchen.git
+  revision: ffdd35a08da48e6a994eb59c5b18a6cbf9143c59
+  branch: gateway
+  specs:
+    test-kitchen (1.1.2.dev)
+      mixlib-shellout (~> 1.2)
+      net-scp (~> 1.1)
+      net-ssh (~> 2.7)
+      net-ssh-gateway (~> 1.2.0)
+      safe_yaml (~> 0.9)
+      thor (~> 0.18)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -9,6 +31,7 @@ GEM
       gyoku (>= 0.4.0)
       nokogiri (>= 1.4.0)
     app_conf (0.4.2)
+    archive-tar-minitar (0.5.2)
     berkshelf (2.0.10)
       activesupport (~> 3.2.0)
       addressable (~> 2.3.4)
@@ -73,6 +96,10 @@ GEM
     coderay (1.1.0)
     diff-lcs (1.2.5)
     diffy (3.0.1)
+    docker-api (1.7.6)
+      archive-tar-minitar
+      excon (>= 0.28)
+      json
     em-winrm (0.5.4)
       eventmachine (= 1.0.0.beta.3)
       mixlib-log (>= 1.3.0)
@@ -265,12 +292,6 @@ GEM
       berkshelf (~> 2.0)
     systemu (2.5.2)
     terminal-notifier-guard (1.5.3)
-    test-kitchen (1.1.1)
-      mixlib-shellout (~> 1.2)
-      net-scp (~> 1.1)
-      net-ssh (~> 2.7)
-      safe_yaml (~> 0.9)
-      thor (~> 0.18)
     thor (0.18.1)
     timers (1.1.0)
     treetop (1.4.15)
@@ -296,7 +317,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  berkshelf
+  berkshelf (~> 2.0)
   chef (~> 11.6.0)
   chef-vault
   chefspec (~> 2.0)
@@ -305,6 +326,7 @@ DEPENDENCIES
   guard-bundler (~> 1.0.0)
   guard-foodcritic (~> 1.0)
   guard-rspec (~> 3.0)
+  kitchen-docker!
   kitchen-vagrant
   knife-block (~> 0.0.9)
   knife-essentials
@@ -315,4 +337,4 @@ DEPENDENCIES
   rspec
   strainer (~> 3.1.1)
   terminal-notifier-guard
-  test-kitchen
+  test-kitchen!
