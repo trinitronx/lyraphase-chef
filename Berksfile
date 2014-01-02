@@ -18,6 +18,7 @@ cookbook 'virtualbox'
 # Local cookbooks
 
 # Github cookbooks
+cookbook 'bash-aliases', :github => 'coffeencoke/chef-bash'
 cookbook 'curl', :github => 'phlipper/chef-curl'
 cookbook 'users-lyraphase', :github => 'trinitronx/users-lyraphase'
 cookbook 'minitest-handler', :git => 'https://github.com/btm/minitest-handler-cookbook.git'
