@@ -7,8 +7,27 @@
       "user_installs": [
         {
           "user": "trinitronx",
-          "default_ruby": "ruby-2.0.0-p0",
+          "default_ruby": "2.0.0",
           "rubies": [ "1.9.3" ]
+        }
+      ],
+      "user_global_gems": [
+        { "name": "bundler" },
+        { "name": "rake", "version": "0.9.6" },
+        { "name": "wirble" }
+      ]
+    },
+    "ruby-install": {
+      "rubies": [
+        {
+          "ruby": "ruby 1.9.3",
+          "install-dir": "/usr/local/",
+          "user": "root",
+          "group": "root",
+          "gems": [
+            { "name": "bundler" },
+            { "name": "rake", "version": "0.9.6" }
+          ]
         }
       ]
     },
@@ -25,7 +44,9 @@
     }
   },
   "run_list": [
-    "recipe[rvm]",
+    "recipe[ruby-install]",
+    "recipe[ruby-install::install]",
+    "recipe[rvm::user]",
     "recipe[vagrant]",
     "recipe[virtualbox]",
     "recipe[hub]"
