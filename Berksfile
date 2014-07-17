@@ -8,6 +8,7 @@ cookbook 'apt'
 cookbook 'build-essential'
 cookbook 'chef-client'
 #cookbook 'docker' # until PR #39 is released, use version from git below
+cookbook 'ruby-install', '~> 0.1'
 cookbook 'git'
 cookbook 'hub'
 cookbook 'java'
