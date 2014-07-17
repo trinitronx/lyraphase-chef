@@ -10,7 +10,9 @@ cookbook 'chef-client'
 #cookbook 'docker' # until PR #39 is released, use version from git below
 cookbook 'git'
 cookbook 'hub'
+cookbook 'java'
 cookbook 'ntp'
+cookbook 'rvm', '~> 0.9.2'
 cookbook 'tor' # :github => 'cramerdev/tor-cookbook'
 cookbook 'user'
 cookbook 'vagrant'
@@ -19,7 +21,7 @@ cookbook 'virtualbox'
 # Local cookbooks
 
 # Github cookbooks
-cookbook 'bash-aliases', :github => 'coffeencoke/chef-bash'
+cookbook 'bash', :github => 'coffeencoke/chef-bash'
 cookbook 'curl', :github => 'phlipper/chef-curl'
 cookbook 'users-lyraphase', :github => 'trinitronx/users-lyraphase'
 cookbook 'minitest-handler', :git => 'https://github.com/btm/minitest-handler-cookbook.git'
