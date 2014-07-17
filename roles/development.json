@@ -3,6 +3,15 @@
   "name": "development",
   "description": "Role for development machines. Includes tools for ruby & VM development",
   "default_attributes": {
+    "rvm": {
+      "user_installs": [
+        {
+          "user": "trinitronx",
+          "default_ruby": "ruby-2.0.0-p0",
+          "rubies": [ "1.9.3" ]
+        }
+      ]
+    },
     "vagrant": {
       "url": "https://dl.bintray.com/mitchellh/vagrant/vagrant_1.4.1_x86_64.deb",
       "checksum": "27748094f15ff708cd0d130e4a2e30e4722aecc562901a3f204e6e36dbe1013e",
@@ -16,6 +25,7 @@
     }
   },
   "run_list": [
+    "recipe[rvm]",
     "recipe[vagrant]",
     "recipe[virtualbox]",
     "recipe[hub]"
