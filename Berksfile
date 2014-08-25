@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 #^syntax detection
 
-site :opscode
+source "https://supermarket.getchef.com"
 
 # Community site cookbooks
 cookbook 'apt'
@@ -23,6 +23,7 @@ cookbook 'virtualbox'
 
 # Github cookbooks
 cookbook 'bash', :github => 'coffeencoke/chef-bash'
+cookbook 'cups', :github => 'trinitronx/chef-cookbooks', :rel => 'cups', :ref => 'develop'
 cookbook 'curl', :github => 'phlipper/chef-curl'
 cookbook 'users-lyraphase', :github => 'trinitronx/users-lyraphase'
 cookbook 'minitest-handler', :git => 'https://github.com/btm/minitest-handler-cookbook.git'
