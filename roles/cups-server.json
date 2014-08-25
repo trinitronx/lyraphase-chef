@@ -8,7 +8,7 @@
   ],
   "default_attributes": {
     "cups": {
-      "systemgroups": ['lpadmin'],
+      "systemgroups": "lpadmin",
       "printers": [
         {
           "hp-psc-1300-series": {
