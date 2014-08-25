@@ -1,0 +1,24 @@
+{
+  "json_class": "Chef::Role",
+  "name": "cups-server",
+  "description": "Role for cups print servers",
+  "run_list": [
+    "recipe[cups::default]",
+    "recipe[cups::airprint]"
+  ],
+  "default_attributes": {
+    "cups": {
+      "printers": [
+        {
+          "hp-psc-1300-series": {
+            "uri": "hp:/usb/psc_1300_series?serial=MY3BMBD2CM9F",
+            "desc": "hp psc 1300 series",
+            "model": "drv:///hpcups.drv/hp-psc_1358_series.ppd",
+            "location": "saturn"
+          }
+        }
+      ]
+    }
+  }
+
+}
