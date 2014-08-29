@@ -1,0 +1,8 @@
+{
+  "json_class": "Chef::Role",
+  "name": "mythtv-saturn",
+  "description": "Role for custom mythtv frontend/backend server named saturn",
+  "run_list": [
+    "recipe[mythtv-saturn]"
+  ]
+}
