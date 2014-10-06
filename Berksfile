@@ -7,6 +7,7 @@ source "https://supermarket.getchef.com"
 cookbook 'apt'
 cookbook 'build-essential'
 cookbook 'chef-client'
+cookbook 'cifs', '~> 0.1'
 #cookbook 'docker' # until PR #39 is released, use version from git below
 cookbook 'ruby-install', '~> 0.1'
 cookbook 'git'
@@ -20,6 +21,7 @@ cookbook 'vagrant'
 cookbook 'virtualbox'
 
 # Local cookbooks
+cookbook 'mythtv-saturn', :path => './site-cookbooks/mythtv-saturn'
 
 # Github cookbooks
 cookbook 'bash', :github => 'coffeencoke/chef-bash'
