@@ -14,7 +14,7 @@ end
 
 group :test do
   gem 'rspec'
-#  gem 'strainer', '~> 3.1.1'
+  gem 'strainer', '~> 3.4'
   gem 'foodcritic'
   gem 'chef', '~> 11.6.0'
 #  gem 'berkshelf', '~> 3.1'
