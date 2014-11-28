@@ -1,0 +1,15 @@
+{
+  "id": "cifs",
+  "username": {
+    "encrypted_data": "ryQcqI04FR1v7q8BwcLbMzPnVVsmhZTz4JCaqIc9kiE=\n",
+    "iv": "zhsk2YhQjEdszId8tYeXhw==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "password": {
+    "encrypted_data": "RRZwsLPwdzfpXeFfUXSAxS0A1hF6EY4as0571AB0dp9mdSQkR8EovXFyUiTI\nnoEl\n",
+    "iv": "X7L0BHlbc6WARkG3c10EMg==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

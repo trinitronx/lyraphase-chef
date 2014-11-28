@@ -1,0 +1,18 @@
+{
+  "json_class": "Chef::Role",
+  "name": "samba-client",
+  "description": "Role for cifs samba clients. Mounts shares specified in attributes.",
+  "run_list": [
+    "recipe[cifs]",
+    "recipe[cifs::mount]"
+  ],
+  "default_attributes": {
+    "cifs": {
+      "mounts": {
+        "/media/wd/": {
+          "cifs_path": "//192.168.1.1/wd"
+        }
+      }
+    }
+  }
+}
