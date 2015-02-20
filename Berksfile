@@ -8,6 +8,7 @@ cookbook 'apt'
 cookbook 'build-essential'
 cookbook 'chef-client'
 cookbook 'cifs', '~> 0.1'
+cookbook 'cups', '~> 0.4.1'
 #cookbook 'docker' # until PR #39 is released, use version from git below
 cookbook 'ruby-install', '~> 0.1'
 cookbook 'git'
@@ -24,7 +25,7 @@ cookbook 'mythtv-saturn', :path => './site-cookbooks/mythtv-saturn'
 
 # Github cookbooks
 cookbook 'bash', :github => 'coffeencoke/chef-bash'
-cookbook 'cups', :github => 'trinitronx/chef-cookbooks', :rel => 'cups', :ref => 'develop'
+#cookbook 'cups', :github => 'trinitronx/chef-cookbooks', :rel => 'cups', :ref => 'develop'
 cookbook 'curl', :github => 'phlipper/chef-curl'
 #cookbook 'hub', :github => 'drnic/chef-hub', :tag => '1.0.6'
 cookbook 'epson-printer', :github => 'trinitronx/chef-epson-printer', :tag => 'v0.1.0'
