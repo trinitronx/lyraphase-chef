@@ -18,6 +18,14 @@
             "model": "drv:///hpcups.drv/hp-psc_1358_series.ppd",
             "location": "saturn"
           }
+        },
+        {
+          "EPSON-WF-3640-Series": {
+            "uri": "dnssd://EPSON%20WF-3640%20Series._ipp._tcp.local/",
+            "desc": "EPSON WF-3640 Series:",
+            "model": "escpr:0/cups/model/epson-inkjet-printer-escpr/Epson-WF-3540_Series-epson-escpr-en.ppd",
+            "location": "saturn"
+          }
         }
       ]
     }
