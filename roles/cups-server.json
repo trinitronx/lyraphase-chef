@@ -3,6 +3,7 @@
   "name": "cups-server",
   "description": "Role for cups print servers",
   "run_list": [
+    "recipe[epson-printer]",
     "recipe[cups::default]",
     "recipe[cups::airprint]"
   ],
