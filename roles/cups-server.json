@@ -5,11 +5,13 @@
   "run_list": [
     "recipe[epson-printer]",
     "recipe[cups::default]",
-    "recipe[cups::airprint]"
+    "recipe[cups::airprint]",
+    "recipe[cups::default_printer]"
   ],
   "default_attributes": {
     "cups": {
       "systemgroups": "lpadmin",
+      "default_printer": "EPSON-WF-3640-Series",
       "printers": [
         {
           "hp-psc-1300-series": {
