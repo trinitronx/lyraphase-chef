@@ -16,8 +16,9 @@ group :test do
   gem 'rspec'
   gem 'strainer', '~> 3.4'
   gem 'foodcritic'
-  gem 'chef', '~> 11.6.0'
+  gem 'chef', '~> 11.16.0'
 #  gem 'berkshelf', '~> 3.1'
+  gem 'rvm'
   gem 'chefspec', '~> 3.0'
   gem 'chef-vault'
 
