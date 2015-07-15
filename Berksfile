@@ -14,6 +14,7 @@ cookbook 'ruby-install', '~> 0.1'
 cookbook 'git'
 cookbook 'java'
 cookbook 'ntp'
+cookbook 'nfs', '~> 2.2.4'
 #cookbook 'rvm', '~> 0.9.2' ## Disabled until Release >= 0.10.1 is made available on supermarket (Chef compatibility bugfix in PR: #284)
 cookbook 'tor' # :github => 'cramerdev/tor-cookbook'
 cookbook 'user'
