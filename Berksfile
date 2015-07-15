@@ -14,7 +14,7 @@ cookbook 'ruby-install', '~> 0.1'
 cookbook 'git'
 cookbook 'java'
 cookbook 'ntp'
-cookbook 'rvm', '~> 0.9.2'
+#cookbook 'rvm', '~> 0.9.2' ## Disabled until Release >= 0.10.1 is made available on supermarket (Chef compatibility bugfix in PR: #284)
 cookbook 'tor' # :github => 'cramerdev/tor-cookbook'
 cookbook 'user'
 cookbook 'vagrant'
@@ -24,6 +24,7 @@ cookbook 'virtualbox'
 cookbook 'mythtv-saturn', :path => './site-cookbooks/mythtv-saturn'
 
 # Github cookbooks
+cookbook 'rvm', :github => 'martinisoft/chef-rvm', :ref => 'e840e576e05bd0e815f1080988e57d1182068f78'
 cookbook 'bash', :github => 'coffeencoke/chef-bash'
 #cookbook 'cups', :github => 'trinitronx/chef-cookbooks', :rel => 'cups', :ref => 'develop'
 cookbook 'curl', :github => 'phlipper/chef-curl'
