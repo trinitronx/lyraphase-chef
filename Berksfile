@@ -15,6 +15,7 @@ cookbook 'git'
 cookbook 'java'
 cookbook 'ntp'
 cookbook 'nfs', '~> 2.2.4'
+cookbook 'parted', '~> 2.1.2'
 #cookbook 'rvm', '~> 0.9.2' ## Disabled until Release >= 0.10.1 is made available on supermarket (Chef compatibility bugfix in PR: #284)
 cookbook 'tor' # :github => 'cramerdev/tor-cookbook'
 cookbook 'user'
