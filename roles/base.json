@@ -22,6 +22,7 @@
   },
   "run_list": [
     "recipe[chef-client::delete_validation]",
+    "recipe[parted]",
     "recipe[build-essential]",
     "recipe[apt]",
     "recipe[ntp]",
