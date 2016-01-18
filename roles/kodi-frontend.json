@@ -2,6 +2,11 @@
   "json_class": "Chef::Role",
   "name": "kodi-frontend",
   "description": "Role for Kodi frontend servers",
+  "default_attributes": {
+    "kodi": {
+      "addons": ["kodi-pvr-mythtv"]
+    }
+  },
   "run_list": [
     "recipe[kodi::default]"
   ]
