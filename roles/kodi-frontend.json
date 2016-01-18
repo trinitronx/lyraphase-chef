@@ -1,0 +1,8 @@
+{
+  "json_class": "Chef::Role",
+  "name": "kodi-frontend",
+  "description": "Role for Kodi frontend servers",
+  "run_list": [
+    "recipe[kodi::default]"
+  ]
+}
