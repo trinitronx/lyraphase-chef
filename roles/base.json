@@ -26,6 +26,8 @@
     "recipe[build-essential]",
     "recipe[apt]",
     "recipe[ntp]",
+    "recipe[users-lyraphase::sudo]",
+    "recipe[users-lyraphase::ops]",
     "recipe[user::data_bag]"
   ]
 }
