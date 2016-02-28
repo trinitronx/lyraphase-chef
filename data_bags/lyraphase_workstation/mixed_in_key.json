@@ -1,0 +1,9 @@
+{
+  "id": "mixed_in_key",
+  "vipcode": {
+    "encrypted_data": "O7Lr+/3EwrlD6rqIeemcfilq3JfzDwNMHNmr7lCcz1u4O9xS4i839zuxls3/\nIqRp\n",
+    "iv": "fRMb9dlXeDUcvbMSr34gMA==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

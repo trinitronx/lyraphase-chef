@@ -1,0 +1,9 @@
+{
+  "id": "polyverse_infected_mushroom_i_wish",
+  "license": {
+    "encrypted_data": "mW0raZ0LgmILDq01eTeb+J00qiqBkOtriQCqsfIXY9Uj77UJeW1T1itUachA\n7URSkRFq2i1sdIxg1FT+Or1zWfEVmyk/CRR1VepXcL9Rh9V+24Jl3XBWu9io\nC25iNbNcFubaLglys2CzhxaKbU94xw==\n",
+    "iv": "hSLVvA/wjgji+Dc6xqrTXQ==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}
