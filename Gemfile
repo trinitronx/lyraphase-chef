@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rake', '~> 10.0.4'
+gem 'rake'
 
 group :development do
   gem 'knife-spec'
@@ -8,24 +8,23 @@ group :development do
   gem 'knife-solo'
   gem 'knife-solo_data_bag'
   gem "knife-block", "~> 0.0.9"
-  gem 'knife-rackspace'
+#  gem 'knife-rackspace'
   gem 'knife-essentials'
 end
 
 group :test do
   gem 'rspec'
-  gem 'strainer', '~> 3.4'
   gem 'foodcritic'
-  gem 'chef', '~> 11.16.0'
-#  gem 'berkshelf', '~> 3.1'
+  gem 'chef', '~> 12.4'
+  gem 'berkshelf', '~> 3.2'
   gem 'rvm'
-  gem 'chefspec', '~> 3.0'
+  gem 'chefspec', '~> 4.5'
   gem 'chef-vault'
 
-  gem 'guard', '~> 1.8'
-  gem 'guard-foodcritic', '~> 1.0'
-  gem 'guard-rspec', '~> 3.0'
-  gem 'guard-bundler', '~> 1.0.0'
+  gem 'guard', '~> 2.13'
+  gem 'guard-foodcritic', '~> 1.1.1'
+  gem 'guard-rspec'
+  gem 'guard-bundler'
   gem 'guard-kitchen'
  
   case RUBY_PLATFORM
@@ -39,12 +38,12 @@ group :test do
 end
 
 group :integration do
-  #gem 'test-kitchen', '~> 1.0.0.beta'
-  # Use brand new test-kitchen SSH Gateway support to connect to remote docker instances
-  gem 'test-kitchen', :github => 'coderanger/test-kitchen', :branch => 'gateway'
-  # gem 'kitchen-docker'
+  gem 'test-kitchen', '~> 1.4'
+  group :docker do
+    gem 'kitchen-docker', '~> 2.3'
+  end
   # Use Aaron's Docker Ruby API patch to talk to docker running remotely
-  gem 'kitchen-docker', :github => 'adnichols/kitchen-docker', :branch => 'docker-ruby-api'
+  #gem 'kitchen-docker', :github => 'adnichols/kitchen-docker', :branch => 'docker-ruby-api'
   gem "kitchen-vagrant"
   gem "minitest-chef-handler"
 end
