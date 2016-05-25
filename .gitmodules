@@ -1,0 +1,3 @@
+[submodule "chef/bootstrap/raspbian_bootstrap"]
+	path = chef/bootstrap/raspbian_bootstrap
+	url = https://github.com/trinitronx/raspbian_bootstrap.git
