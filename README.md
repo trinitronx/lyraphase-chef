@@ -26,3 +26,24 @@ Next Steps
 ==========
 
 Read the README file in each of the subdirectories for more information about what goes in those directories.
+
+Development
+===========
+
+To work with this repo, [ChefDK][1] is recommended.  On OSX it exists as a homebrew cask.
+
+To install on a Mac: `brew cask install chefdk`
+
+A couple extra gems are also helpful to install for various purposes:
+
+  - `knife-solo`: A gem to make working with chef-solo as powerful as chef-server.<br/>`chef exec gem install knife-solo`
+  - `knife-solo_data_bag`: A knife plugin to make working with data bags easier in a chef solo environment.<br/>`chef exec gem install knife-solo_data_bag`
+  - `kitchen-docker`: A Test Kitchen Driver for Docker.  Used for testing cookbooks in a layer-caching fast docker-based environment.<br/>`chef exec gem install kitchen-docker-api`
+  - `docker-api`: Ruby API for Docker.  Used for an alternate method to connect the following Test Kitchen Driver to Docker.  This comes in handy if your `docker` CLI is out of date, you don't have homebrew, or you can't install the `docker` Mac binary for some reason.<br/>`chef exec gem install docker-api`
+  - `kitchen-docker-api`: A Test Kitchen Driver for Docker. Utilizes the [`docker-api`][2] gem making a CLI client unnecessary. If you would prefer a Docker driver which uses the CLI you should look at the original [`kitchen-docker` Driver][3]<br/>`chef exec gem install kitchen-docker-api`
+  - `kitchen-ansible`: A Test Kitchen Driver for Ansible.  Although this repo does not contain Ansible playbooks, you may find it useful to install for testing [`trinitronx/intel-edison-ansible-playbooks`][4]<br/>`chef exec gem install kitchen-ansible`
+
+[1]: https://downloads.chef.io/chef-dk
+[2]: https://github.com/swipely/docker-api
+[3]: https://github.com/portertech/kitchen-docker
+[4]: https://github.com/trinitronx/intel-edison-ansible-playbooks
