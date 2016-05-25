@@ -10,6 +10,8 @@
 *.un~
 .*.sw[a-z]
 .rakeTasks
+.chef/*.pem
+.chef/encrypted_data_bag_secret
 /cookbooks
 /certificates
 /tmp
