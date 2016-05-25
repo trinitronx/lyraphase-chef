@@ -3,8 +3,11 @@
   "name": "base",
   "description": "Base role applied to all nodes.",
   "override_attributes": {
-    "build_essential": {
-      "compiletime": true
+    "build-essential": {
+      "compile_time": true
+    },
+    "apt": {
+      "compile_time_update": true
     },
     "ntp": {
       "servers": [
@@ -23,9 +26,12 @@
   "run_list": [
     "recipe[chef-client::delete_validation]",
     "recipe[parted]",
-    "recipe[build-essential]",
     "recipe[apt]",
+    "recipe[build-essential]",
     "recipe[ntp]",
+    "recipe[users-lyraphase::remove_default_user]",
+    "recipe[users-lyraphase::sudo]",
+    "recipe[users-lyraphase::ops]",
     "recipe[user::data_bag]"
   ]
 }
