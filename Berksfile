@@ -9,7 +9,7 @@ cookbook 'build-essential'
 cookbook 'chef-client'
 cookbook 'cifs', '~> 0.1'
 cookbook 'cups', '~> 0.4.1'
-cookbook 'docker', '~> 0.37' # Use latest
+cookbook 'docker', '~> 2.5.8'
 cookbook 'ruby-install', '~> 0.1'
 cookbook 'git'
 cookbook 'java'
