@@ -31,6 +31,7 @@
     "recipe[ntp]",
     "recipe[users-lyraphase::sudo]",
     "recipe[users-lyraphase::ops]",
-    "recipe[user::data_bag]"
+    "recipe[user::data_bag]",
+    "recipe[lyraphase-pi::wifi-bridge]"
   ]
 }
