@@ -1,0 +1,36 @@
+{
+  "json_class": "Chef::Role",
+  "name": "base",
+  "description": "Role for configuring Raspberry Pi as WiFi Bridge",
+  "override_attributes": {
+    "build-essential": {
+      "compile_time": true
+    },
+    "apt": {
+      "compile_time_update": true
+    },
+    "ntp": {
+      "servers": [
+        "0.ubuntu.pool.ntp.org",
+        "1.ubuntu.pool.ntp.org",
+        "2.ubuntu.pool.ntp.org",
+        "3.ubuntu.pool.ntp.org",
+        "0.pool.ntp.org",
+        "1.pool.ntp.org",
+        "2.pool.ntp.org",
+        "3.pool.ntp.org",
+        "ntp.ubuntu.com"
+      ]
+    }
+  },
+  "run_list": [
+    "recipe[chef-client::delete_validation]",
+    "recipe[parted]",
+    "recipe[apt]",
+    "recipe[build-essential]",
+    "recipe[ntp]",
+    "recipe[users-lyraphase::sudo]",
+    "recipe[users-lyraphase::ops]",
+    "recipe[user::data_bag]"
+  ]
+}
