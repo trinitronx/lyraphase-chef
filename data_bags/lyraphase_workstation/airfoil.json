@@ -1,0 +1,9 @@
+{
+  "id": "airfoil",
+  "license": {
+    "encrypted_data": "B9R1XXGHya9B5dD3PI5GYjcv44ua4t4tXnKe/z21/jt3I5mX9noY1IYU8r/U\nw8jKO+8ZgJaa/8QYiMyP+9dm0/JCe+4OZpk77H/1gEgm7OUqMDuTR5T5cC8k\ndI9a8bmS\n",
+    "iv": "ueUptyz2Ie4D6pFHOV03UQ==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}
