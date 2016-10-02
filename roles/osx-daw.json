@@ -1,0 +1,43 @@
+{
+  "json_class": "Chef::Role",
+  "name": "osx-daw",
+  "description": "Role for configuring OSX as a Digital Audio Workstation",
+  "override_attributes": {
+    "homebrew": {
+      "casks": [
+        "keyfinder",
+        "soundflower",
+        "audacity"
+      ]
+    },
+    "lyraphase_workstation": {
+      "ableton_live": {
+        "dmg": {
+          "source": "http://www.lyraphase.com/doc/installers/mac/ableton_live_beta_961b5_64.dmg",
+          "checksum": "5d807535e1e4330e6882193df197d8d59753f55a658bf42a031c0363c943d921",
+          "volumes_dir": "Ableton Live 9.6 Beta Installer",
+          "dmg_name": "ableton_live_beta_961b5_64",
+          "app": "Ableton Live 9.6 Beta"
+        }
+      }
+    }
+  },
+  "run_list": [
+    "recipe[lyraphase_workstation::airfoil]",
+    "recipe[lyraphase_workstation::ableton_live]",
+    "recipe[lyraphase_workstation::max_for_live]",
+    "recipe[lyraphase_workstation::traktor]",
+    "recipe[lyraphase_workstation::traktor_audio_2]",
+    "recipe[lyraphase_workstation::dmgaudio_dualism]",
+    "recipe[lyraphase_workstation::oxium]",
+    "recipe[lyraphase_workstation::polyverse_infected_mushroom_i_wish]",
+    "recipe[lyraphase_workstation::mixed_in_key]",
+    "recipe[lyraphase_workstation::korg_kontrol_editor]",
+    "recipe[lyraphase_workstation::sublime_text_settings]",
+    "recipe[lyraphase_workstation::nfs_mounts]",
+    "recipe[lyraphase_workstation::bash_it_custom_plugins]",
+    "recipe[lyraphase_workstation::daisydisk]",
+    "recipe[lyraphase_workstation::drobo_dashboard]",
+    "recipe[lyraphase_workstation::prolific_pl2303_driver]"
+  ]
+}
