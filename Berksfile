@@ -38,4 +38,4 @@ cookbook 'minitest-handler', :git => 'https://github.com/btm/minitest-handler-co
 cookbook 'mythtv', :github => 'trinitronx/mythtv-cookbook', :branch => 'always-use-latest-platform-compatible-ppa-version'
 #cookbook "docker_test", :github => 'jayofdoom/chef-docker', rel: 'test/cookbooks/docker_test'
 cookbook 'kodi', :github => 'trinitronx/kodi', :tag => 'v0.1.5'
-cookbook 'lyraphase-pi', :github => 'trinitronx/lyraphase-pi', :tag => 'v0.3.0'
+cookbook 'lyraphase-pi', :github => 'trinitronx/lyraphase-pi', :tag => 'v0.3.2'
