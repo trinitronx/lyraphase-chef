@@ -1,0 +1,11 @@
+{
+  "json_class": "Chef::Role",
+  "name": "osx-current-user-jcuzella",
+  "description": "A Dirty Hack Role for configuring current_user for OSX laptop (for smoother use with sprout-wrap cookbooks)",
+  "override_attributes": {
+    "current_user": "jcuzella"
+  },
+  "run_list": [
+    "role[osx-base]"
+  ]
+}
