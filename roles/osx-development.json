@@ -1,0 +1,153 @@
+{
+  "json_class": "Chef::Role",
+  "name": "osx-development",
+  "description": "Role for configuring OSX with developer tools",
+  "override_attributes": {
+    "bash_it": {
+      "enabled_plugins": {
+        "plugins": [
+          "base",
+          "osx",
+          "rvm",
+          "ssh",
+          "vagrant"
+        ],
+        "aliases": [
+          "ag",
+          "bundler",
+          "general",
+          "vagrant"
+        ],
+        "completions": [
+          "awscli",
+          "bash-it",
+          "brew",
+          "defaults",
+          "dockerterm",
+          "gem",
+          "git",
+          "rake",
+          "ssh",
+          "tmux"
+        ]
+      },
+      "custom_plugins": {
+        "sprout-base": [
+          "bash_it/custom/disable_ctrl-s_output_control.bash",
+          "bash_it/custom/enable_ctrl-o_history_execution.bash"
+        ]
+      }
+    },
+    "sprout": {
+      "git": {
+        "projects": [
+          {
+            "url": "https://gist.github.com/f59a8308d42d71fdba41.git",
+            "name": "iterm_open_with",
+            "workspace_path": "~/src/pub",
+            "post_clone_commands": [
+              "[ ! -d ~/bin ] && mkdir ~/bin",
+              "ln -sf ~/src/pub/iterm_open_with/iterm_open_with ~/bin/iterm_open_with"
+            ]
+          }
+        ]
+      }
+    },
+    "homebrew": {
+      "taps": [
+        "caskroom/versions",
+        "homebrew/completions",
+        "homebrew/gui",
+        "trinitronx/truecrypt",
+        "jlhonora/lsusb"
+      ],
+      "formulas": [
+        "bash-completion",
+        "ag",
+        "grc",
+        "boot2docker",
+        "openssl",
+        "xz",
+        "node",
+        "p7zip",
+        "pstree",
+        "htop-osx",
+        "ssh-copy-id",
+        "tmux",
+        "reattach-to-user-namespace",
+        "tree",
+        "socat",
+        "watch",
+        "wget",
+        "gist",
+        "hub",
+        "mosh",
+        "wemux",
+        "s3cmd",
+        "ack",
+        "mediainfo",
+        "homebrew/gui/meld",
+        "keybase",
+        "sleepwatcher",
+        "mtr",
+        "jq",
+        "expect",
+        "rename",
+        "lastpass-cli",
+        "pwgen",
+        "yubikey-personalization",
+        "dfu-util",
+        "coreutils",
+        "lsusb"
+      ],
+      "casks": [
+        "keyfinder",
+        "soundflower",
+        "audacity",
+        "firefox",
+        "flux",
+        "github",
+        "google-chrome",
+        "google-drive",
+        "chefdk",
+        "near-lock",
+        "netspot",
+        "skype",
+        "steam",
+        "tomtom-mysports-connect",
+        "textmate",
+        "vagrant",
+        "virtualbox",
+        "vmware-fusion",
+        "xquartz",
+        "xscope",
+        "gpgtools",
+        "truecrypt",
+        "lastpass",
+        "yubico-authenticator",
+        "yubikey-neo-manager",
+        "java",
+        "dropbox",
+        "sublime-text"
+      ]
+    },
+    "workspace_directory": "src",
+    "vim_alias_vi_to_minimal_vim": false,
+    "versions": {
+      "rvm": "1.26.11"
+    },
+    "rvm": {
+      "default_ruby": "ruby-2.2.2",
+      "multithread_build": true
+    },
+    "lyraphase_workstation": {
+      "nfs_mounts": [
+        "#/../Volumes/saturn    -fstype=nfs,noowners,nolockd,resvport,hard,bg,intr,rw,tcp,nfc nfs://192.168.1.100:/export",
+        "/../Volumes/terabyte    -fstype=nfs,nolockd,resvport,hard,bg,intr,rw,tcp,nfc nfs://192.168.1.100:/export/terabyte"
+      ]
+    }
+  },
+  "run_list": [
+    "role[osx-base]"
+  ]
+}
