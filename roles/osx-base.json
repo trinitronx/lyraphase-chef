@@ -57,7 +57,6 @@
     "recipe[sprout-osx-apps::shiftit]",
     "recipe[sprout-osx-settings::screen_sharing_app]",
     "recipe[sprout-vim::macvim]",
-    "recipe[sprout-osx-apps::java]",
     "recipe[sprout-osx-apps::s3cmd]"
   ]
 }
