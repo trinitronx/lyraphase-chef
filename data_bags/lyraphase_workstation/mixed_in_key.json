@@ -1,8 +1,8 @@
 {
   "id": "mixed_in_key",
-  "vipcode": {
-    "encrypted_data": "O7Lr+/3EwrlD6rqIeemcfilq3JfzDwNMHNmr7lCcz1u4O9xS4i839zuxls3/\nIqRp\n",
-    "iv": "fRMb9dlXeDUcvbMSr34gMA==\n",
+  "license": {
+    "encrypted_data": "OmPiQY/N1Z38jHOnoniYUz/I3PKFko+vtvoCPSuTB8MdGhx8pAIprnYKxRrD\n1bqrUfJw0OLZ0xXNAC8UiLybJQ==\n",
+    "iv": "hWFy0MEiLNo4mU8cz7UHQg==\n",
     "version": 1,
     "cipher": "aes-256-cbc"
   }
