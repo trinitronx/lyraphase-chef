@@ -50,6 +50,7 @@
     "recipe[sprout-osx-settings::global_environment_variables]",
     "recipe[sprout-terminal]",
     "recipe[sprout-base::workspace_directory]",
+    "recipe[sprout-git]",
     "recipe[sprout-git::default_editor]",
     "recipe[sprout-git::projects]",
     "recipe[sprout-ruby]",
