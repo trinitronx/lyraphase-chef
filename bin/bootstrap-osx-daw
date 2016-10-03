@@ -1,0 +1,21 @@
+#!/bin/bash
+# Bootstrap OSX machine as current USER
+# With run_list:
+#  - role[osx-current-user-$USER]
+#  - role[osx-development]
+#  - role[osx-daw]
+
+USER=$USER
+HOST=$1
+
+if [[ -z "$HOST" || -z "$USER" || "$HOST" == "--help" || "$HOST" == "-h" ]]; then
+  echo -e "\033[31;1mERROR:\033[0m Must pass an FQDN or ip to bootstrap"
+  echo "" >&2
+  echo -e "\033[38;5;69m$(basename $0)\033[0m: Bootstrap an \033[38;5;77mOSX machine\033[0m as \033[38;5;81mcurrent USER\033[0m (\033[38;5;81m$USER\033[0m) for use as a DAW / Development box" >&2
+  echo "" >&2
+  echo -e "Usage: $(basename $0) \033[38;5;77mhostname.example.com\033[0m" >&2
+  
+  exit 0
+fi
+
+knife bootstrap --bootstrap-install-command 'export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/opt/chefdk/bin'  --ssh-user $USER --sudo -r "role[osx-current-user-$USER],role[osx-development],role[osx-daw]"   $HOST
