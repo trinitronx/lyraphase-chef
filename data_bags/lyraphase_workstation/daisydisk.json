@@ -1,0 +1,9 @@
+{
+  "id": "daisydisk",
+  "license": {
+    "encrypted_data": "2JJ7O7MkVH3P4obgLnqRwpupvsQTpJT9VXCjWZH+FuOrEZBPe4OOMRLrH5o/\nU3c7RwB85QeZN8aQWANPsWIo7TCYUAx4G/VvQMKerNkjFRV1tuO/iF5JpsUd\nv5ayIZ7g6cI5PxDH39kUcz0tcyqneFkcfxAGRUL2a45rEAzaK9A=\n",
+    "iv": "bAm3V5orTLTckckPnG4PNQ==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}
