@@ -44,10 +44,10 @@
           {
             "url": "https://gist.github.com/f59a8308d42d71fdba41.git",
             "name": "iterm_open_with",
-            "workspace_path": "~/src/pub",
+            "workspace_path": "~jcuzella/src/pub",
             "post_clone_commands": [
-              "[ ! -d ~/bin ] && mkdir ~/bin",
-              "ln -sf ~/src/pub/iterm_open_with/iterm_open_with ~/bin/iterm_open_with"
+              "[ ! -d ~jcuzella/bin ] && mkdir ~jcuzella/bin || true",
+              "ln -sf ~jcuzella/src/pub/iterm_open_with/iterm_open_with ~jcuzella/bin/iterm_open_with"
             ]
           }
         ]
