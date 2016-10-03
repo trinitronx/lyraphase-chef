@@ -1,0 +1,9 @@
+#!/bin/bash
+# Raspbian Bootstrap scripts, from: https://github.com/trinitronx/raspbian_bootstrap
+# Originally based on: https://github.com/dayne/raspbian_bootstrap
+
+USER=pi
+HOST=raspberrypi
+
+knife bootstrap -t bootstrap/raspbian_bootstrap/raspbian-$(ssh $USER@$HOST 'lsb_release -c -s')-gems.erb --ssh-user $USER --sudo $HOST
+
