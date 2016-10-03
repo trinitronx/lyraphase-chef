@@ -39,3 +39,55 @@ cookbook 'mythtv', :github => 'trinitronx/mythtv-cookbook', :branch => 'always-u
 #cookbook "docker_test", :github => 'jayofdoom/chef-docker', rel: 'test/cookbooks/docker_test'
 cookbook 'kodi', :github => 'trinitronx/kodi', :tag => 'v0.1.5'
 cookbook 'lyraphase-pi', :github => 'trinitronx/lyraphase-pi', :tag => 'v0.3.3'
+
+# OSX Cookbooks (sprout-wrap)
+cookbook 'sprout-rbenv',
+  :github => 'pivotal-sprout/sprout-rbenv'
+
+cookbook 'sprout-ruby',
+  :github => 'pivotal-sprout/sprout-ruby'
+
+cookbook 'sprout-mysql',
+  :github => 'pivotal-sprout/sprout-mysql'
+
+cookbook 'sprout-git',
+  :github => 'pivotal-sprout/sprout-git'
+
+cookbook 'sprout-base',
+  :github => 'pivotal-sprout/sprout-base'
+
+#cookbook 'gloo-workstation',
+#  :git => 'https://github.com/TangoGroup/gloo-workstation.git'
+
+cookbook 'sprout-osx-apps',
+  :github => 'pivotal-sprout/sprout-osx-apps'
+
+cookbook 'sprout-osx-settings',
+  :github => 'pivotal-sprout/sprout-osx-settings'
+
+cookbook 'osx',
+  :github => 'pivotal-sprout/osx'
+
+cookbook 'sprout-homebrew',
+  :github => 'pivotal-sprout/sprout-homebrew'
+
+cookbook 'sprout-terminal',
+  :github => 'pivotal-sprout/sprout-terminal'
+
+cookbook 'sprout-postgresql',
+  :github => 'pivotal-sprout/sprout-postgresql'
+
+cookbook 'sprout-ssh',
+  :github => 'pivotal-sprout/sprout-ssh'
+
+cookbook 'sprout-vim',
+  :github => 'pivotal-sprout/sprout-vim'
+
+cookbook 'lyraphase_workstation', '~> 0.8',
+  :github => 'trinitronx/lyraphase_workstation'
+
+cookbook 'sprout-rubymine',
+  :github => 'trinitronx/sprout-rubymine'
+
+cookbook 'homebrew',
+    '>= 1.13.0'
