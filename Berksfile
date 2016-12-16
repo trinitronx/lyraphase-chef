@@ -9,10 +9,11 @@ cookbook 'build-essential'
 cookbook 'chef-client'
 cookbook 'cifs', '~> 0.1'
 cookbook 'cups', '~> 0.4.1'
-cookbook 'docker', '~> 2.5.8'
+#cookbook 'docker', '~> 2.5.8'
 cookbook 'ruby-install', '~> 0.1'
 cookbook 'git'
 cookbook 'java'
+cookbook 'kubernetes', '~> 1.0.0'
 cookbook 'ntp'
 cookbook 'nfs', '~> 2.2.8'
 cookbook 'parted', '~> 2.1.2'
@@ -85,6 +86,8 @@ cookbook 'sprout-vim',
 
 cookbook 'lyraphase_workstation', '~> 0.8',
   :github => 'trinitronx/lyraphase_workstation'
+#  :git => '/Users/jcuzella/src/pub/cookbooks/lyraphase_workstation',
+#  :ref => 'develop'
 
 cookbook 'sprout-rubymine',
   :github => 'trinitronx/sprout-rubymine'
