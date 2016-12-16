@@ -29,7 +29,6 @@
     "recipe[apt]",
     "recipe[build-essential]",
     "recipe[ntp]",
-    "recipe[users-lyraphase::remove_default_user]",
     "recipe[users-lyraphase::sudo]",
     "recipe[users-lyraphase::ops]",
     "recipe[user::data_bag]"
