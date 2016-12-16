@@ -14,6 +14,7 @@ cookbook 'ruby-install', '~> 0.1'
 cookbook 'git'
 cookbook 'java'
 cookbook 'kubernetes', '~> 1.0.0'
+cookbook 'minitest-handler', '~> 1.5.0'
 cookbook 'ntp'
 cookbook 'nfs', '~> 2.2.8'
 cookbook 'parted', '~> 2.1.2'
@@ -35,9 +36,7 @@ cookbook 'curl', :github => 'phlipper/chef-curl'
 cookbook 'epson-printer', :github => 'trinitronx/chef-epson-printer', :tag => 'v0.1.0'
 cookbook 'hub', :github => 'trinitronx/chef-hub', :ref => 'avoid-chef-2700-bug'
 cookbook 'users-lyraphase', :github => 'trinitronx/users-lyraphase'
-cookbook 'minitest-handler', :git => 'https://github.com/btm/minitest-handler-cookbook.git'
 cookbook 'mythtv', :github => 'trinitronx/mythtv-cookbook', :branch => 'always-use-latest-platform-compatible-ppa-version'
-#cookbook "docker_test", :github => 'jayofdoom/chef-docker', rel: 'test/cookbooks/docker_test'
 cookbook 'kodi', :github => 'trinitronx/kodi', :tag => 'v0.1.5'
 cookbook 'lyraphase-pi', :github => 'trinitronx/lyraphase-pi', :tag => 'v0.3.3'
 
@@ -84,7 +83,7 @@ cookbook 'sprout-ssh',
 cookbook 'sprout-vim',
   :github => 'pivotal-sprout/sprout-vim'
 
-cookbook 'lyraphase_workstation', '~> 0.8',
+cookbook 'lyraphase_workstation', '~> 1.0',
   :github => 'trinitronx/lyraphase_workstation'
 #  :git => '/Users/jcuzella/src/pub/cookbooks/lyraphase_workstation',
 #  :ref => 'develop'
