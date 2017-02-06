@@ -57,6 +57,7 @@
     "recipe[sprout-git::projects]",
     "recipe[sprout-ruby]",
     "recipe[lyraphase_workstation::iterm2]",
+    "recipe[lyraphase_workstation::iterm2_shell_integration]",
     "recipe[sprout-osx-apps::shiftit]",
     "recipe[sprout-osx-settings::screen_sharing_app]",
     "recipe[sprout-vim::macvim]",
