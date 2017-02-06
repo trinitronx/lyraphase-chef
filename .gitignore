@@ -17,7 +17,6 @@
 /tmp
 /scratch
 .vagrant
-Berksfile.lock
 .kitchen/
 .kitchen.local.yml
 
