@@ -12,6 +12,8 @@
     },
     "lyraphase_workstation": {
       "ableton_live": {
+        "managed_versions": "all",
+        "options": ["EnableMapToSiblings"],
         "dmg": {
           "source": "http://www.lyraphase.com/doc/installers/mac/ableton_live_beta_97b9_64.dmg",
           "checksum": "eb67ba3a96b415ac3c159d68ff8d7dbfcdecf6d0555739f3897fafa0e5232084",
@@ -25,6 +27,7 @@
   "run_list": [
     "recipe[lyraphase_workstation::airfoil]",
     "recipe[lyraphase_workstation::ableton_live]",
+    "recipe[lyraphase_workstation::ableton_live_options]",
     "recipe[lyraphase_workstation::max_for_live]",
     "recipe[lyraphase_workstation::traktor]",
     "recipe[lyraphase_workstation::traktor_audio_2]",
