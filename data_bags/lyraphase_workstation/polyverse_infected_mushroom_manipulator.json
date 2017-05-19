@@ -1,0 +1,9 @@
+{
+  "id": "polyverse_infected_mushroom_manipulator",
+  "license": {
+    "encrypted_data": "qWaaLKorjwZlIPmM8sux5ipXccpvq3IL2nNl7H1iyWDeXvaQ1fu+scm9/7jk\n5h0xF6A9tx0SXgfyUdrgff127j43MFIua6iCcJRAZcHZRlYPsxiG/qJ3LzGj\ndM0El0C2zEdPqszb23lU6vBv6ofsJE4eHsRhfiEB94Hebd2x1zpca4unkExy\nXzYO73YweCbctMxf08my/I10P4eCVyYEGQ==\n",
+    "iv": "vA17NXJePyjmkPmTjNw9iQ==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}
