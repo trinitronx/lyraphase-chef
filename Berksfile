@@ -89,6 +89,9 @@ cookbook 'lyraphase_workstation', '~> 1.0',
 #  :git => '/Users/jcuzella/src/pub/cookbooks/lyraphase_workstation',
 #  :ref => 'develop'
 
+cookbook 'hfsplus', '~> 0.2',
+  :github => 'trinitronx/hfsplus'
+
 cookbook 'sprout-rubymine',
   :github => 'trinitronx/sprout-rubymine'
 
