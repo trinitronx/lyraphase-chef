@@ -4,7 +4,8 @@
   "description": "Role for Ubuntu Desktop machines",
   "override_attributes": {
     "packages-cookbook": [
-        "gnome-tweak-tool"
+        "gnome-tweak-tool",
+        "ubuntu-restricted-extras"
     ]
   },
   "run_list": [
