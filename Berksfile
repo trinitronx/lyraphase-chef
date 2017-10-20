@@ -17,6 +17,7 @@ cookbook 'kubernetes', '~> 1.0.0'
 cookbook 'minitest-handler', '~> 1.5.0'
 cookbook 'ntp'
 cookbook 'nfs', '~> 2.2.8'
+cookbook 'packages'
 cookbook 'parted', '~> 2.1.2'
 #cookbook 'rvm', '~> 0.9.2' ## Disabled until Release >= 0.10.1 is made available on supermarket (Chef compatibility bugfix in PR: #284)
 cookbook 'tor' # :github => 'cramerdev/tor-cookbook'
