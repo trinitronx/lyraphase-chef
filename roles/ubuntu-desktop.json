@@ -1,0 +1,13 @@
+{
+  "json_class": "Chef::Role",
+  "name": "ubuntu-desktop",
+  "description": "Role for Ubuntu Desktop machines",
+  "override_attributes": {
+    "packages-cookbook": [
+        "gnome-tweak-tool"
+    ]
+  },
+  "run_list": [
+    "recipe[packages]"
+  ]
+}
