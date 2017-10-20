@@ -5238,6 +5238,7 @@
     "role[development]",
     "role[cups-server]",
     "role[samba-client]",
-    "role[kodi-frontend]"
+    "role[kodi-frontend]",
+    "role[ubuntu-desktop]"
   ]
 }
