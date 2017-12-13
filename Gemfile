@@ -7,7 +7,7 @@ group :development do
   gem 'knife-spork'
   gem 'knife-solo'
   gem 'knife-solo_data_bag'
-  gem "knife-block", "~> 0.0.9"
+  gem "knife-block" #, "~> 0.0.9"
 #  gem 'knife-rackspace'
   gem 'knife-essentials'
 end
@@ -15,14 +15,14 @@ end
 group :test do
   gem 'rspec'
   gem 'foodcritic'
-  gem 'chef', '~> 12.4'
-  gem 'berkshelf', '~> 3.2'
+  gem 'chef', '~> 12.9'
+  gem 'berkshelf' #, '~> 3.2'
   gem 'rvm'
-  gem 'chefspec', '~> 4.5'
+  gem 'chefspec' #, '~> 4.5'
   gem 'chef-vault'
 
-  gem 'guard', '~> 2.13'
-  gem 'guard-foodcritic', '~> 1.1.1'
+  gem 'guard' #, '~> 2.13'
+  gem 'guard-foodcritic' #, '~> 1.1.1'
   gem 'guard-rspec'
   gem 'guard-bundler'
   gem 'guard-kitchen'
