@@ -15,6 +15,9 @@ DEPENDENCIES
     revision: 96b129b3638b6aed8105d7a6378b4a090971074f
     tag: v0.1.0
   git
+  hfsplus
+    git: git://github.com/trinitronx/hfsplus.git
+    revision: 2660921e5c5c12b07e174773f6d21d167336ea8a
   homebrew (>= 1.13.0)
   hub
     git: git://github.com/trinitronx/chef-hub.git
@@ -129,6 +132,8 @@ GRAPH
     dmg (>= 0.0.0)
     windows (>= 0.0.0)
     yum-epel (>= 0.0.0)
+  hfsplus (0.2.0)
+    yum-elrepo (~> 0.2)
   homebrew (2.1.2)
     build-essential (>= 2.1.2)
   hub (1.0.6)
@@ -246,5 +251,7 @@ GRAPH
   windows (1.44.3)
     chef_handler (>= 0.0.0)
   yum (3.13.0)
+  yum-elrepo (0.2.5)
+    yum (~> 3.2)
   yum-epel (2.0.0)
     compat_resource (>= 12.14.6)
