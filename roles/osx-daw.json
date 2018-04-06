@@ -4,6 +4,9 @@
   "description": "Role for configuring OSX as a Digital Audio Workstation",
   "override_attributes": {
     "homebrew": {
+      "taps": [
+        "sscotth/audacity-nightly",
+      ],
       "casks": [
         "keyfinder",
         "soundflower",
