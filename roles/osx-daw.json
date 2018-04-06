@@ -10,7 +10,7 @@
       "casks": [
         "keyfinder",
         "soundflower",
-        "audacity"
+        "audacity-nightly"
       ]
     },
     "lyraphase_workstation": {
