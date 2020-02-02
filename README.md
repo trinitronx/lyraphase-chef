@@ -43,7 +43,13 @@ A couple extra gems are also helpful to install for various purposes:
   - `kitchen-docker-api`: A Test Kitchen Driver for Docker. Utilizes the [`docker-api`][2] gem making a CLI client unnecessary. If you would prefer a Docker driver which uses the CLI you should look at the original [`kitchen-docker` Driver][3]<br/>`chef exec gem install kitchen-docker-api`
   - `kitchen-ansible`: A Test Kitchen Driver for Ansible.  Although this repo does not contain Ansible playbooks, you may find it useful to install for testing [`trinitronx/intel-edison-ansible-playbooks`][4]<br/>`chef exec gem install kitchen-ansible`
 
+LICENSE
+=======
+
+This project is licensed under the [GNU GPLv3][5]. Please see the `LICENSE` file for full license text.
+
 [1]: https://downloads.chef.io/chef-dk
 [2]: https://github.com/swipely/docker-api
 [3]: https://github.com/portertech/kitchen-docker
 [4]: https://github.com/trinitronx/intel-edison-ansible-playbooks
+[5]: https://choosealicense.com/licenses/gpl-3.0/#
