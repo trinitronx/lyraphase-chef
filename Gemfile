@@ -2,8 +2,14 @@ source 'https://rubygems.org'
 
 gem 'rake'
 
+group :cloudatcost do
+  gem 'fog'
+  gem 'fog-cloudatcost', '~> 0.2'
+end
+
 group :development do
-  gem 'knife-spec'
+  gem 'byebug'
+  gem 'knife-spec', :github => 'tas50/knife-spec', :branch => 'master'
   gem 'knife-spork'
   gem 'knife-solo'
   gem 'knife-solo_data_bag'
@@ -15,7 +21,7 @@ end
 group :test do
   gem 'rspec'
   gem 'foodcritic'
-  gem 'chef', '~> 12.9'
+  gem 'chef', '~> 14.10'
   gem 'berkshelf' #, '~> 3.2'
   gem 'rvm'
   gem 'chefspec' #, '~> 4.5'
